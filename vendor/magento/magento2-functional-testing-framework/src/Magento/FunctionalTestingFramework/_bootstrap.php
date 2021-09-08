@@ -46,7 +46,7 @@ if (file_exists(ENV_FILE_PATH . '.env')) {
 
     defined('MAGENTO_CLI_COMMAND_PARAMETER') || define('MAGENTO_CLI_COMMAND_PARAMETER', 'command');
     $env->setEnvironmentVariable('MAGENTO_CLI_COMMAND_PARAMETER', MAGENTO_CLI_COMMAND_PARAMETER);
-    
+
     defined('DEFAULT_TIMEZONE') || define('DEFAULT_TIMEZONE', 'America/Los_Angeles');
     $env->setEnvironmentVariable('DEFAULT_TIMEZONE', DEFAULT_TIMEZONE);
 
@@ -76,7 +76,7 @@ defined('TESTS_MODULE_PATH') || define(
 );
 
 // add the debug flag here
-$debugMode = $_ENV['MFTF_DEBUG'] ?? false;
-if (!(bool)$debugMode && extension_loaded('xdebug')) {
-    xdebug_disable();
-}
+// $debugMode = $_ENV['MFTF_DEBUG'] ?? false;
+// if (!(bool)$debugMode && extension_loaded('xdebug')) {
+//     xdebug_disable();
+// }
