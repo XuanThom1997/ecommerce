@@ -1317,3 +1317,509 @@ Stack trace:
 [2021-09-08 10:00:24] main.INFO: Add of item with id Yotpo_Yotpo::yotpo_report_reviews was processed [] []
 [2021-09-08 10:00:24] main.INFO: Add of item with id Yotpo_Yotpo::yotpo_reviews_external was processed [] []
 [2021-09-08 10:00:24] main.INFO: Add of item with id Yotpo_Yotpo::yotpo_analytics_external was processed [] []
+[2021-09-09 04:51:36] main.ERROR: Error: Application is not installed yet.  [] []
+[2021-09-09 04:58:02] main.ERROR: Warning: SessionHandler::read(): open(/var/www/html/magento/ecommerce/var/session//sess_84e511a267ae540f2852f57d970020c2, O_RDWR) failed: Permission denied (13) in /var/www/html/magento/ecommerce/vendor/magento/framework/Session/SaveHandler/Native.php on line 22 [] []
+[2021-09-09 05:01:29] main.CRITICAL: Class MGS\Blog\Model\Resource\Comment\Grid\EntityFactoryInterface does not exist
+Class MGS\Blog\Model\Resource\Comment\Grid\Collection\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-09-09 05:01:29] main.ERROR: Class MGS\Blog\Model\Resource\Comment\Grid\EntityFactoryInterface does not exist
+Class MGS\Blog\Model\Resource\Comment\Grid\Collection\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only.
+#0 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/Code/Generator.php(69): Magento\Framework\Code\Generator->generateClass('MGS\\Blog\\Model\\...')
+#1 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/App/Task/Operation/Interception.php(100): Magento\Setup\Module\Di\Code\Generator->generateList(Array)
+#2 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/App/Task/Manager.php(56): Magento\Setup\Module\Di\App\Task\Operation\Interception->doOperation()
+#3 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Console/Command/DiCompileCommand.php(216): Magento\Setup\Module\Di\App\Task\Manager->process(Object(Closure), Object(Closure))
+#4 /var/www/html/magento/ecommerce/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DiCompileCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(1005): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(271): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DiCompileCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /var/www/html/magento/ecommerce/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(147): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/html/magento/ecommerce/bin/magento(23): Symfony\Component\Console\Application->run()
+#10 {main} [] []
+[2021-09-09 05:04:19] main.ERROR: Command "module:help" is not defined.
+
+Did you mean one of these?
+    module:config:status
+    module:disable
+    module:enable
+    module:status
+    module:uninstall
+#0 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(235): Symfony\Component\Console\Application->find('module:help')
+#1 /var/www/html/magento/ecommerce/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(147): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /var/www/html/magento/ecommerce/bin/magento(23): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2021-09-09 05:05:05] main.ERROR: Command "module:disabled" is not defined.
+
+Did you mean one of these?
+    cache:disable
+    maintenance:disable
+    module:config:status
+    module:disable
+    module:enable
+    module:status
+    module:uninstall
+#0 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(235): Symfony\Component\Console\Application->find('module:disabled')
+#1 /var/www/html/magento/ecommerce/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(147): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /var/www/html/magento/ecommerce/bin/magento(23): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2021-09-09 07:44:54] main.CRITICAL: Class MGS\Blog\Model\Resource\Comment\Grid\EntityFactoryInterface does not exist
+Class MGS\Blog\Model\Resource\Comment\Grid\Collection\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-09-09 07:44:54] main.ERROR: Class MGS\Blog\Model\Resource\Comment\Grid\EntityFactoryInterface does not exist
+Class MGS\Blog\Model\Resource\Comment\Grid\Collection\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only.
+#0 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/Code/Generator.php(69): Magento\Framework\Code\Generator->generateClass('MGS\\Blog\\Model\\...')
+#1 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/App/Task/Operation/Interception.php(100): Magento\Setup\Module\Di\Code\Generator->generateList(Array)
+#2 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/App/Task/Manager.php(56): Magento\Setup\Module\Di\App\Task\Operation\Interception->doOperation()
+#3 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Console/Command/DiCompileCommand.php(216): Magento\Setup\Module\Di\App\Task\Manager->process(Object(Closure), Object(Closure))
+#4 /var/www/html/magento/ecommerce/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DiCompileCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(1005): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(271): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DiCompileCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /var/www/html/magento/ecommerce/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(147): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/html/magento/ecommerce/bin/magento(23): Symfony\Component\Console\Application->run()
+#10 {main} [] []
+[2021-09-09 08:14:50] main.CRITICAL: Class MGS\Blog\Model\Resource\Comment\Grid\EntityFactoryInterface does not exist
+Class MGS\Blog\Model\Resource\Comment\Grid\Collection\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-09-09 08:14:50] main.ERROR: Class MGS\Blog\Model\Resource\Comment\Grid\EntityFactoryInterface does not exist
+Class MGS\Blog\Model\Resource\Comment\Grid\Collection\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only.
+#0 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/Code/Generator.php(69): Magento\Framework\Code\Generator->generateClass('MGS\\Blog\\Model\\...')
+#1 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/App/Task/Operation/Interception.php(100): Magento\Setup\Module\Di\Code\Generator->generateList(Array)
+#2 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/App/Task/Manager.php(56): Magento\Setup\Module\Di\App\Task\Operation\Interception->doOperation()
+#3 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Console/Command/DiCompileCommand.php(216): Magento\Setup\Module\Di\App\Task\Manager->process(Object(Closure), Object(Closure))
+#4 /var/www/html/magento/ecommerce/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DiCompileCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(1005): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(271): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DiCompileCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /var/www/html/magento/ecommerce/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(147): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/html/magento/ecommerce/bin/magento(23): Symfony\Component\Console\Application->run()
+#10 {main} [] []
+[2021-09-09 08:28:53] main.CRITICAL: Class MGS\Blog\Model\Resource\Comment\Grid\EntityFactoryInterface does not exist
+Class MGS\Blog\Model\Resource\Comment\Grid\Collection\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-09-09 08:28:53] main.ERROR: Class MGS\Blog\Model\Resource\Comment\Grid\EntityFactoryInterface does not exist
+Class MGS\Blog\Model\Resource\Comment\Grid\Collection\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only.
+#0 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/Code/Generator.php(69): Magento\Framework\Code\Generator->generateClass('MGS\\Blog\\Model\\...')
+#1 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/App/Task/Operation/Interception.php(100): Magento\Setup\Module\Di\Code\Generator->generateList(Array)
+#2 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/App/Task/Manager.php(56): Magento\Setup\Module\Di\App\Task\Operation\Interception->doOperation()
+#3 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Console/Command/DiCompileCommand.php(216): Magento\Setup\Module\Di\App\Task\Manager->process(Object(Closure), Object(Closure))
+#4 /var/www/html/magento/ecommerce/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DiCompileCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(1005): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(271): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DiCompileCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /var/www/html/magento/ecommerce/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(147): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/html/magento/ecommerce/bin/magento(23): Symfony\Component\Console\Application->run()
+#10 {main} [] []
+[2021-09-09 08:32:11] main.CRITICAL: Class MGS\Blog\Model\Resource\Comment\Grid\EntityFactoryInterface does not exist
+Class MGS\Blog\Model\Resource\Comment\Grid\Collection\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-09-09 08:32:11] main.ERROR: Class MGS\Blog\Model\Resource\Comment\Grid\EntityFactoryInterface does not exist
+Class MGS\Blog\Model\Resource\Comment\Grid\Collection\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only.
+#0 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/Code/Generator.php(69): Magento\Framework\Code\Generator->generateClass('MGS\\Blog\\Model\\...')
+#1 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/App/Task/Operation/Interception.php(100): Magento\Setup\Module\Di\Code\Generator->generateList(Array)
+#2 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/App/Task/Manager.php(56): Magento\Setup\Module\Di\App\Task\Operation\Interception->doOperation()
+#3 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Console/Command/DiCompileCommand.php(216): Magento\Setup\Module\Di\App\Task\Manager->process(Object(Closure), Object(Closure))
+#4 /var/www/html/magento/ecommerce/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DiCompileCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(1005): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(271): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DiCompileCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /var/www/html/magento/ecommerce/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(147): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/html/magento/ecommerce/bin/magento(23): Symfony\Component\Console\Application->run()
+#10 {main} [] []
+[2021-09-09 08:38:53] main.CRITICAL: Class MGS\Blog\Model\Resource\Comment\Grid\EntityFactoryInterface does not exist
+Class MGS\Blog\Model\Resource\Comment\Grid\Collection\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-09-09 08:38:53] main.ERROR: Class MGS\Blog\Model\Resource\Comment\Grid\EntityFactoryInterface does not exist
+Class MGS\Blog\Model\Resource\Comment\Grid\Collection\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only.
+#0 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/Code/Generator.php(69): Magento\Framework\Code\Generator->generateClass('MGS\\Blog\\Model\\...')
+#1 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/App/Task/Operation/Interception.php(100): Magento\Setup\Module\Di\Code\Generator->generateList(Array)
+#2 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/App/Task/Manager.php(56): Magento\Setup\Module\Di\App\Task\Operation\Interception->doOperation()
+#3 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Console/Command/DiCompileCommand.php(216): Magento\Setup\Module\Di\App\Task\Manager->process(Object(Closure), Object(Closure))
+#4 /var/www/html/magento/ecommerce/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DiCompileCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(1005): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(271): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DiCompileCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /var/www/html/magento/ecommerce/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(147): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/html/magento/ecommerce/bin/magento(23): Symfony\Component\Console\Application->run()
+#10 {main} [] []
+[2021-09-09 08:50:24] main.CRITICAL: Class MGS\Blog\Model\Resource\Comment\Grid\EntityFactoryInterface does not exist
+Class MGS\Blog\Model\Resource\Comment\Grid\Collection\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-09-09 08:50:24] main.ERROR: Class MGS\Blog\Model\Resource\Comment\Grid\EntityFactoryInterface does not exist
+Class MGS\Blog\Model\Resource\Comment\Grid\Collection\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only.
+#0 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/Code/Generator.php(69): Magento\Framework\Code\Generator->generateClass('MGS\\Blog\\Model\\...')
+#1 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/App/Task/Operation/Interception.php(100): Magento\Setup\Module\Di\Code\Generator->generateList(Array)
+#2 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/App/Task/Manager.php(56): Magento\Setup\Module\Di\App\Task\Operation\Interception->doOperation()
+#3 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Console/Command/DiCompileCommand.php(216): Magento\Setup\Module\Di\App\Task\Manager->process(Object(Closure), Object(Closure))
+#4 /var/www/html/magento/ecommerce/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DiCompileCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(1005): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(271): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DiCompileCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /var/www/html/magento/ecommerce/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(147): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/html/magento/ecommerce/bin/magento(23): Symfony\Component\Console\Application->run()
+#10 {main} [] []
+[2021-09-09 08:55:52] main.CRITICAL: Class MGS\Blog\Model\Resource\Comment\Grid\EntityFactoryInterface does not exist
+Class MGS\Blog\Model\Resource\Comment\Grid\Collection\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-09-09 08:55:52] main.ERROR: Class MGS\Blog\Model\Resource\Comment\Grid\EntityFactoryInterface does not exist
+Class MGS\Blog\Model\Resource\Comment\Grid\Collection\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only.
+#0 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/Code/Generator.php(69): Magento\Framework\Code\Generator->generateClass('MGS\\Blog\\Model\\...')
+#1 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/App/Task/Operation/Interception.php(100): Magento\Setup\Module\Di\Code\Generator->generateList(Array)
+#2 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Module/Di/App/Task/Manager.php(56): Magento\Setup\Module\Di\App\Task\Operation\Interception->doOperation()
+#3 /var/www/html/magento/ecommerce/setup/src/Magento/Setup/Console/Command/DiCompileCommand.php(216): Magento\Setup\Module\Di\App\Task\Manager->process(Object(Closure), Object(Closure))
+#4 /var/www/html/magento/ecommerce/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DiCompileCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(1005): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(271): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\DiCompileCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /var/www/html/magento/ecommerce/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/magento/ecommerce/vendor/symfony/console/Application.php(147): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/html/magento/ecommerce/bin/magento(23): Symfony\Component\Console\Application->run()
+#10 {main} [] []
+[2021-09-09 09:09:48] main.ERROR: crontab -l 2>/dev/null 2>&1
+sh: 1: crontab: not found [] []
+[2021-09-09 09:09:48] main.ERROR: crontab -l 2>/dev/null 2>&1
+sh: 1: crontab: not found [] []
+[2021-09-09 09:09:48] main.ERROR: echo "
+#~ MAGENTO START a2fca9fc78eb403b90588285a7201b55b007f6a62eff93fc43470b9406e7687e
+* * * * * /usr/local/bin/php /var/www/html/magento/ecommerce/bin/magento cron:run 2>&1 | grep -v \"Ran jobs by schedule\" >> /var/www/html/magento/ecommerce/var/log/magento.cron.log
+#~ MAGENTO END a2fca9fc78eb403b90588285a7201b55b007f6a62eff93fc43470b9406e7687e
+" 2>&1 | crontab - 2>&1
+sh: 5: crontab: not found [] []
+[2021-09-09 09:21:23] main.INFO: Item Magento_Backend::system_currency was removed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Theme::design_config was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Theme::system_design_theme was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Config::system_config was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Backend::system_design_schedule was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Backend::system_store was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Backend::dashboard was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Backend::system was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Backend::system_tools was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Backend::system_design was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Backend::system_convert was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Backend::system_cache was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Backend::marketing was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Backend::marketing_communications was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Backend::marketing_seo was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Backend::marketing_user_content was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Backend::content was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Backend::content_elements was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Backend::stores was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Backend::stores_settings was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Backend::stores_attributes was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Backend::other_settings was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Backend::system_other_settings was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Search::search_terms was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Search::search_synonyms was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Backup::system_tools_backup was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Variable::system_variable was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Customer::customer was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Customer::customer_manage was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Customer::customer_online was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Customer::customer_group was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_AdminNotification::system_adminnotification was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Indexer::system_index was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Cms::cms_page was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Cms::cms_block was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Catalog::catalog was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Catalog::catalog_products was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Catalog::catalog_categories was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Catalog::catalog_attributes_attributes was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Catalog::catalog_attributes_sets was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Catalog::inventory was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_CatalogRule::promo was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_CatalogRule::promo_catalog was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Widget::cms_widget_instance was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_MediaGalleryUi::media was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_MediaGalleryUi::media_gallery was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_User::system_acl was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_User::system_acl_users was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_User::system_acl_roles was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_User::system_acl_locks was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Sales::sales was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Sales::sales_operation was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Sales::sales_order was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Sales::sales_invoice was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Sales::sales_shipment was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Sales::sales_creditmemo was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Sales::sales_transactions was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Sales::system_order_statuses was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_CurrencySymbol::system_currency was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_CurrencySymbol::system_currency_rates was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_CurrencySymbol::system_currency_symbols was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Integration::system_extensions was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Integration::system_integrations was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Downloadable::report_products_downloads was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_ImportExport::system_convert_import was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_ImportExport::system_convert_export was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_ImportExport::system_convert_history was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Email::template was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_EncryptionKey::system_crypt_key was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Analytics::business_intelligence was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Analytics::advanced_reporting was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Analytics::bi_essentials was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_InventoryAdminUi::inventory was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_InventoryAdminUi::source was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_InventoryAdminUi::stock was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report_marketing was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report_salesroot was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report_salesroot_sales was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report_salesroot_tax was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report_salesroot_invoiced was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report_salesroot_shipping was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report_salesroot_refunded was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report_salesroot_coupons was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report_shopcart_product was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report_shopcart_abandoned was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report_products was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report_products_bestsellers was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report_products_sold was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report_products_viewed was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report_products_lowstock was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report_customers was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report_customers_accounts was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report_customers_totals was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report_customers_orders was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report_statistics was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Reports::report_statistics_refresh was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Search::report_search_term was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_LoginAsCustomerLog::login_log was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Marketplace::partners was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Newsletter::newsletter_template was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Newsletter::newsletter_queue was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Newsletter::newsletter_subscriber was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Newsletter::newsletter_problem was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_SalesRule::promo_quote was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Paypal::report_salesroot_paypal_settlement_reports was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Paypal::paypal_billing_agreement was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_CheckoutAgreements::sales_checkoutagreement was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Review::catalog_reviews_ratings_ratings was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Review::catalog_reviews_ratings_pending was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Review::catalog_reviews_ratings_reviews_all was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Review::report_review was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Review::report_review_customer was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Review::report_review_product was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_UrlRewrite::urlrewrite was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Sitemap::catalog_sitemap was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Tax::sales_tax was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Tax::sales_tax_rules was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Tax::sales_tax_rates was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_TaxImportExport::system_convert_tax was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_AsynchronousOperations::system_magento_logging was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_AsynchronousOperations::system_magento_logging_bulk_operations was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Dotdigitalgroup_Email::marketing_automation was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Dotdigitalgroup_Email::automation_studio was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Dotdigitalgroup_Email::exclusion_rules was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Dotdigitalgroup_Email::marketing_automation_report was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Dotdigitalgroup_Email::dashboards was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Dotdigitalgroup_Email::importer was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Dotdigitalgroup_Email::automation was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Dotdigitalgroup_Email::campaign was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Dotdigitalgroup_Email::cron was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Dotdigitalgroup_Email::logviewer was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Dotdigitalgroup_Email::abandoned was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Dotdigitalgroup_Chat::config was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_Blog::blog was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_Blog::manage_post was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_Blog::manage_comment was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_Blog::manage_category was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_Blog::configuration was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_Brand::brand was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_Brand::manage_brand was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_Brand::configuration was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Magento_Backend::mgs was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_Mpanel::mgs_elements was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_Mpanel::general_setting was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_Mpanel::theme_setting was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_Mpanel::color_setting was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_Portfolio::portfolio was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_Portfolio::portfolio_category was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_Portfolio::portfolio_items was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_Promobanners::promobanners was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_Promobanners::manage was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_QuickView::QuickView was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_QuickView::configuration was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_Social::social was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_Social::configuration was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_StoreLocator::storelocator was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_StoreLocator::locator_manage was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_Testimonial::testimonial was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id MGS_Testimonial::testimonial_manage was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id PayPal_Braintree::settlement_report was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id PayPal_Braintree::virtual_terminal was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Yotpo_Yotpo::yotpo_report_reviews was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Yotpo_Yotpo::yotpo_reviews_external was processed [] []
+[2021-09-09 09:21:23] main.INFO: Add of item with id Yotpo_Yotpo::yotpo_analytics_external was processed [] []
+[2021-09-09 09:59:45] main.CRITICAL: The specified "/var/www/html/magento/ecommerce/generated/code/Magento/Framework/App/Http/Interceptor.php.8" file couldn't be written. Warning!file_put_contents(/var/www/html/magento/ecommerce/generated/code/Magento/Framework/App/Http/Interceptor.php.8): failed to open stream: Permission denied
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-09-09 09:59:56] main.CRITICAL: The specified "/var/www/html/magento/ecommerce/generated/code/Magento/Framework/App/Http/Interceptor.php.7" file couldn't be written. Warning!file_put_contents(/var/www/html/magento/ecommerce/generated/code/Magento/Framework/App/Http/Interceptor.php.7): failed to open stream: Permission denied
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-09-09 10:03:26] main.INFO: Item Magento_Backend::system_currency was removed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Theme::design_config was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Theme::system_design_theme was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Config::system_config was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Backend::system_design_schedule was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Backend::system_store was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Backend::dashboard was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Backend::system was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Backend::system_tools was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Backend::system_design was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Backend::system_convert was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Backend::system_cache was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Backend::marketing was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Backend::marketing_communications was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Backend::marketing_seo was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Backend::marketing_user_content was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Backend::content was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Backend::content_elements was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Backend::stores was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Backend::stores_settings was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Backend::stores_attributes was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Backend::other_settings was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Backend::system_other_settings was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Search::search_terms was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Search::search_synonyms was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Backup::system_tools_backup was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Variable::system_variable was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Customer::customer was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Customer::customer_manage was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Customer::customer_online was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Customer::customer_group was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_AdminNotification::system_adminnotification was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Indexer::system_index was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Cms::cms_page was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Cms::cms_block was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Catalog::catalog was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Catalog::catalog_products was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Catalog::catalog_categories was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Catalog::catalog_attributes_attributes was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Catalog::catalog_attributes_sets was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Catalog::inventory was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_CatalogRule::promo was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_CatalogRule::promo_catalog was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Widget::cms_widget_instance was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_MediaGalleryUi::media was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_MediaGalleryUi::media_gallery was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_User::system_acl was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_User::system_acl_users was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_User::system_acl_roles was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_User::system_acl_locks was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Sales::sales was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Sales::sales_operation was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Sales::sales_order was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Sales::sales_invoice was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Sales::sales_shipment was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Sales::sales_creditmemo was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Sales::sales_transactions was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Sales::system_order_statuses was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_CurrencySymbol::system_currency was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_CurrencySymbol::system_currency_rates was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_CurrencySymbol::system_currency_symbols was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Integration::system_extensions was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Integration::system_integrations was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Downloadable::report_products_downloads was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_ImportExport::system_convert_import was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_ImportExport::system_convert_export was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_ImportExport::system_convert_history was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Email::template was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_EncryptionKey::system_crypt_key was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Analytics::business_intelligence was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Analytics::advanced_reporting was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Analytics::bi_essentials was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_InventoryAdminUi::inventory was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_InventoryAdminUi::source was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_InventoryAdminUi::stock was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report_marketing was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report_salesroot was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report_salesroot_sales was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report_salesroot_tax was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report_salesroot_invoiced was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report_salesroot_shipping was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report_salesroot_refunded was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report_salesroot_coupons was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report_shopcart_product was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report_shopcart_abandoned was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report_products was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report_products_bestsellers was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report_products_sold was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report_products_viewed was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report_products_lowstock was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report_customers was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report_customers_accounts was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report_customers_totals was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report_customers_orders was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report_statistics was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Reports::report_statistics_refresh was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Search::report_search_term was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_LoginAsCustomerLog::login_log was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Marketplace::partners was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Newsletter::newsletter_template was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Newsletter::newsletter_queue was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Newsletter::newsletter_subscriber was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Newsletter::newsletter_problem was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_SalesRule::promo_quote was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Paypal::report_salesroot_paypal_settlement_reports was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Paypal::paypal_billing_agreement was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_CheckoutAgreements::sales_checkoutagreement was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Review::catalog_reviews_ratings_ratings was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Review::catalog_reviews_ratings_pending was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Review::catalog_reviews_ratings_reviews_all was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Review::report_review was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Review::report_review_customer was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Review::report_review_product was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_UrlRewrite::urlrewrite was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Sitemap::catalog_sitemap was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Tax::sales_tax was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Tax::sales_tax_rules was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Tax::sales_tax_rates was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_TaxImportExport::system_convert_tax was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_AsynchronousOperations::system_magento_logging was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_AsynchronousOperations::system_magento_logging_bulk_operations was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Dotdigitalgroup_Email::marketing_automation was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Dotdigitalgroup_Email::automation_studio was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Dotdigitalgroup_Email::exclusion_rules was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Dotdigitalgroup_Email::marketing_automation_report was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Dotdigitalgroup_Email::dashboards was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Dotdigitalgroup_Email::importer was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Dotdigitalgroup_Email::automation was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Dotdigitalgroup_Email::campaign was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Dotdigitalgroup_Email::cron was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Dotdigitalgroup_Email::logviewer was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Dotdigitalgroup_Email::abandoned was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Dotdigitalgroup_Chat::config was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_Blog::blog was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_Blog::manage_post was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_Blog::manage_comment was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_Blog::manage_category was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_Blog::configuration was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_Brand::brand was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_Brand::manage_brand was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_Brand::configuration was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Magento_Backend::mgs was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_Mpanel::mgs_elements was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_Mpanel::general_setting was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_Mpanel::theme_setting was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_Mpanel::color_setting was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_Portfolio::portfolio was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_Portfolio::portfolio_category was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_Portfolio::portfolio_items was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_Promobanners::promobanners was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_Promobanners::manage was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_QuickView::QuickView was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_QuickView::configuration was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_Social::social was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_Social::configuration was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_StoreLocator::storelocator was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_StoreLocator::locator_manage was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_Testimonial::testimonial was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id MGS_Testimonial::testimonial_manage was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id PayPal_Braintree::settlement_report was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id PayPal_Braintree::virtual_terminal was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Solwin_Extensions::extensions was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Solwin_Cpanel::view was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Solwin_Cpanel::extension was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Solwin_Cpanel::cpanelsetting was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Solwin_Add::add was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Solwin_Addimage::addimage was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Solwin_Add::add_two was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Solwin_Addimage::addimage_two was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Solwin_ScrolltoTop::extension was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Solwin_ScrolltoTop::scrolltotop was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Solwin_Soldout::soldout was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Solwin_Soldout::outofstock_config was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Yotpo_Yotpo::yotpo_report_reviews was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Yotpo_Yotpo::yotpo_reviews_external was processed [] []
+[2021-09-09 10:03:26] main.INFO: Add of item with id Yotpo_Yotpo::yotpo_analytics_external was processed [] []
