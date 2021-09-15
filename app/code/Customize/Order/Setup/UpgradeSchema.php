@@ -17,29 +17,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
         if (version_compare($context->getVersion(), '1.0.1') < 0) {
             $connection = $setup->getConnection();
             $connection->addColumn(
-                $setup->getTable('sales_order'),
-                'delivery_date',
-                [
-                    'type' => Table::TYPE_TEXT,
-                    'length' => 255,
-                    'nullable' => true,
-                    'default' => '',
-                    'comment' => 'Add New Filed'
-                ]
-            );
-            $connection->addColumn(
-                $setup->getTable('sales_order_address'),
-                'delivery_date',
-                [
-                    'type' => Table::TYPE_TEXT,
-                    'length' => 255,
-                    'nullable' => true,
-                    'default' => '',
-                    'comment' => 'Add New Filed'
-                ]
-            );
-            $connection->addColumn(
-                $setup->getTable('quote_address'),
+                $setup->getTable('sales_order_grid'),
                 'delivery_date',
                 [
                     'type' => Table::TYPE_TEXT,
